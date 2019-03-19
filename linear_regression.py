@@ -1,6 +1,8 @@
 """
 Module with my linear regression implementation using gradient descent and normal equation based on programming
 exercise 1 of Machine Learning course on Coursera.
+
+Author: Suellen Silva de Almeida (susilvalmeida@gmail.com)
 """
 
 import numpy as np
