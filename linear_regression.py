@@ -1,11 +1,12 @@
 """
-Module with my linear regression implementation using gradient descent and normal equation based on programming
+Module with my linear regression implementation using gradient descent and normal equation based on programming 
 exercise 1 of Machine Learning course on Coursera.
 
 Author: Suellen Silva de Almeida (susilvalmeida@gmail.com)
 """
 
 import numpy as np
+from util import add_intercept_term_to_X
 
 def compute_cost_one_variable(X, y, theta):
     """
@@ -26,7 +27,7 @@ def compute_cost_one_variable(X, y, theta):
     """
     m = y.shape[0]
     h = X.dot(theta)
-    J = np.multiply((1/(2*m)), np.sum((h - y)**2))
+    J = (1/(2*m)) * (np.sum((h - y)**2))
     return J
 
 def compute_cost(X, y, theta):
@@ -47,7 +48,7 @@ def compute_cost(X, y, theta):
     """
     m = y.shape[0]
     h = X.dot(theta)
-    J = np.multiply((1/(2*m)), (h-y).T.dot(h-y))
+    J = (1/(2*m)) * ((h-y).T.dot(h-y))
     return J
 
 def gradient_descent(X, y, theta, alpha, num_iters):
@@ -57,7 +58,7 @@ def gradient_descent(X, y, theta, alpha, num_iters):
     Formulas:
         h(x) = theta_0 + theta_1*x(1) + theta_2*x(2) + ... + theta_n*x(n) 
         theta(j) = theta(j) - alpha*(1/m)*sum(h(x)-y)*x(j), for j=0,...n
-    
+
     Args:
         X (np.array): matrix of features of size (m, n+1) where m if the number of training examples and 
                       n is the number of features (+1 is the intercept term)
@@ -71,13 +72,13 @@ def gradient_descent(X, y, theta, alpha, num_iters):
     """
     m = y.shape[0]
     J_history = np.zeros(shape=(num_iters, 1))
-    
+
     for i in range(0, num_iters):
         h = X.dot(theta)
         diff_hy = h - y
-        
-        delta = np.multiply((1/m), diff_hy.T.dot(X))
-        theta = theta - np.multiply(alpha, delta.T)
+
+        delta = (1/m) * (diff_hy.T.dot(X))
+        theta = theta - (alpha * delta.T)
         J_history[i] = compute_cost(X, y, theta)
 
     return theta, J_history
@@ -173,22 +174,6 @@ def predict(X, fitted_model):
     X = add_intercept_term_to_X(X)
 
     return X.dot(fitted_model['theta'])
-
-def add_intercept_term_to_X(X):
-    """
-    Add an additional first column to X to allow to treat theta_0 as simply another feature.
-
-    Args:
-        X (list): matrix of features of size (m, n) where m if the number of training examples and
-                  n is the number of features
-    Returns:
-        (np.array): matrix of features of size (m, n+1) where m if the number of training examples and
-                    n+1 is the number of features plus the intercept term column
-    """
-    X_new = np.ones(shape=(X.shape[0], X.shape[1]+1), dtype=float)
-    for i in range(1, X.shape[1]+1):
-        X_new[:, i] = X[:, i-1]
-    return X_new
 
 def feature_normalize(X, mean=[], std=[]):
     """
