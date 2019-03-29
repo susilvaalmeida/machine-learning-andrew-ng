@@ -13,5 +13,4 @@ In order to have a nice visualization of the concepts, formulas, codes and exerc
 <br>
 [Programming Exercise 3 - Multi-class Classification and Neural Networks](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%203%20-%20Multi-class%20Classification%20and%20Neural%20Networks.ipynb)
 <br>
-[Programming Exercise 4 - Neural Networks Learning](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%204%20-%20Neural%20Networks%20Learning.ipynb)
-
+[Programming Exercise 4 - Neural Networks Learning](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%204%20-%20Neural%20Network%20Learning.ipynb)
