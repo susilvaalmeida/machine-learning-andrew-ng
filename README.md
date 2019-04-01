@@ -16,3 +16,7 @@ In order to have a nice visualization of the concepts, formulas, codes and exerc
 [Programming Exercise 4 - Neural Networks Learning](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%204%20-%20Neural%20Network%20Learning.ipynb)
 <br>
 [Programming Exercise 5 - Regularized Linear Regression and Bias vs Variance](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%205%20-%20Regularized%20Linear%20Regression%20and%20Bias%20vs%20Variance.ipynb)
+<br>
+[Programming Exercise 6 - Support Vector Machines](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%206%20-%20Support%20Vector%20Machines.ipynb)
+<br>
+[Programming Exercise 7 - K-Means Clustering and Principal Component Analysis](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%207%20-%20K-means%20Clustering%20and%20Principal%20Component%20Analysis.ipynb)
