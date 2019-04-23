@@ -20,3 +20,5 @@ In order to have a nice visualization of the concepts, formulas, codes and exerc
 [Programming Exercise 6 - Support Vector Machines](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%206%20-%20Support%20Vector%20Machines.ipynb)
 <br>
 [Programming Exercise 7 - K-Means Clustering and Principal Component Analysis](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%207%20-%20K-means%20Clustering%20and%20Principal%20Component%20Analysis.ipynb)
+<br>
+[Programming Exercise 8 - Anomaly Detection and Recommender Systems](https://nbviewer.jupyter.org/github/susilvaalmeida/machine-learning-andrew-ng/blob/master/Programming%20Exercise%208%20-%20Anomaly%20Detection%20and%20Recommender%20Systems.ipynb)
